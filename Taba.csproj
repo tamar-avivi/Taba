@@ -209,6 +209,7 @@
     <Content Include="Views\web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App_Code\Helper.cs" />
     <Compile Include="Views\SelectShowTable.aspx.cs">
       <DependentUpon>SelectShowTable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -216,10 +217,6 @@
     <Compile Include="Views\SelectShowTable.aspx.designer.cs">
       <DependentUpon>SelectShowTable.aspx</DependentUpon>
     </Compile>
-    <Content Include="App_Code\Helper.cs" />
-    <Content Include="App_Code\SelectShowTable.cs">
-      <SubType>ASPXCodeBehind</SubType>
-    </Content>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>
