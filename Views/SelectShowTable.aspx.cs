@@ -13,11 +13,12 @@ namespace Taba.Views
     {
         public string st = "";
         public string msg = "";
+        public string sqlSelect = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             string fileName = "usersDB.mdf";
             string tableName = "Users";
-            string sqlSelect = "SELECT * FROM " + tableName;
+            sqlSelect = "SELECT * FROM " + tableName;
 
             DataTable table = Helper.ExecuteDataTable(fileName, sqlSelect);
 
@@ -63,7 +64,7 @@ namespace Taba.Views
                     st += "<td>" + table.Rows[i]["cpassword"] + "</td>";
                     st += "</tr>";
                 }
-                msg = length + "people registered";
+                msg = length + " people registered";
             }
         }
     }
